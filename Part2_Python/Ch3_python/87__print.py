@@ -33,3 +33,4 @@ print('{}: {}'.format(idx + 1, fruit))  # 2: Apple
 # f-string - 가장 선호
 # 간결, 직관, 빠름
 print(f'{idx + 1}: {fruit}')  # 2: Apple
+
