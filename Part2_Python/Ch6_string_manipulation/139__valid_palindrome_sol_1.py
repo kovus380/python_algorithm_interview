@@ -1,6 +1,4 @@
 # 리스트로 변환
-
-
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         strs = []
