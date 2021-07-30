@@ -1,3 +1,4 @@
+# 리스트로 변환
 
 
 class Solution:

@@ -1,3 +1,4 @@
+# deque 자료형을 이용한 최적화
 
 
 import collections
