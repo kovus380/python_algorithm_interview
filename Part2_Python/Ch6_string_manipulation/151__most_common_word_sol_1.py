@@ -1,0 +1,18 @@
+# 819 | Most Common Word
+# https://leetcode.com/problems/most-common-word/
+
+import collections
+from typing import List
+import re
+
+
+class Solution:
+    def mostCommonWord(self, paragraph: str, banned: List[str]) -> str :
+        words = [word for word in re.sub(r'[^\w]', ' ', paragraph)
+                 .lower().split() if word not in banned]
+        counts = collections.Counter(words)
+        return counts.most_common(1)[0][0]
+
+solution = Solution()
+paragraph = "Bob hit a bal ..df.df"
+print(solution.mostCommonWord(paragraph, ["hit"]))
