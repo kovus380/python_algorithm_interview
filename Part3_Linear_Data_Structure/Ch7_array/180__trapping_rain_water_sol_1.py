@@ -13,8 +13,8 @@ class Solution:
         left_max, right_max = height[left], height[right]
 
         while left < right:
-            left_max, right_max = max(height[left], left_max),\
-                                  max(height[right], right_max)
+            left_max, right_max = max(left_max, height[left]), \
+                                  max(right_max, height[right])
             if left_max <= right_max:
                 volume += left_max - height[left]
                 left += 1
@@ -23,6 +23,7 @@ class Solution:
                 right -= 1
 
         return volume
+
 
 sol = Solution()
 height = [0,1,0,2,1,0,1,3,2,1,2,1]
