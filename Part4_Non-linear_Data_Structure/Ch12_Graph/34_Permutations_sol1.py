@@ -1,4 +1,4 @@
-# 34 | Permulations
+# 46 | Permulations
 # https://leetcode.com/problems/permutations/
 from typing import List
 
